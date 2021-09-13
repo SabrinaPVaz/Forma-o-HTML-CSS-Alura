@@ -1,0 +1,83 @@
+header {
+    background: #BBBBBB; /* cor de fundo*/
+    padding: 20px 0; /*padding define uma a distância entre o conteúdo de um elemento e suas bordas*/
+}
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+nav {
+    position: absolute; /*posicionamento dos elementos na página*/
+    top: 110px;
+    right: 0;
+}
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase; /* maiusculo*/
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;  
+    margin: 0% 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: #000000 ;
+    border-width: 2px;
+    border-style: solid; /* ou declarar tudo junto ex: border: 2px solid #000000*/
+    border-radius: 10px; /* arredondando o canto de borda*/
+}
+.produtos li:hover{ /* quando passa o mouse por cima*/
+    border-color: #c78c19;
+}
+.produtos li:active{ /* quando clica o mouse*/
+    border-color: #088c19;
+}
+.produtos li:hover h2{
+    font-size: 34px; 
+}
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.produto-descricao{
+    font-size: 18px;
+    font-weight: bold;
+}
+.produto-preco{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0 0 ; /*ou margin-top: 10px;*/
+}
+footer{
+    text-align: center;
+    /*background-color:#cccccc ;*/
+    background: url("bg.jpg"); /* usa uma imagem pequena e copia varias vezes e não deixa o site pesado, ao inves de usar uma imgaem grande*/
+    padding: 40px 0;
+}
+.copyright{
+    color: #ffffff;
+    font-size: 13px;   
+    margin:20px  ;
+    
+}
