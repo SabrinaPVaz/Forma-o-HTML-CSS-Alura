@@ -1,72 +1,138 @@
-
-body {
-	
+header {
+    background: #BBBBBB; /* cor de fundo*/
+    padding: 20px 0; /*padding define uma a distância entre o conteúdo de um elemento e suas bordas*/
 }
-	#banner{
-		width: 100%
+.caixa {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
 }
-.principal{
-	background: #CCCCCC;
-	padding: 30px;
+nav {
+    position: absolute; /*posicionamento dos elementos na página*/
+    top: 110px;
+    right: 0;
 }
-.titulo-principal{
-	padding-left: 20px;
-}
-.titulo-centralizado{ 
-	text-align:center
-}
-p{
-  	 text-align: center
-}
-	#missao{
- 		style=font-size:20px
- }
-em strong {
-	color: red
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
-.itens{ 
-		font-style: italic
-}
-.beneficios{
-	background-color: white;
-	padding: 20px;
-}
-
-ul{
-	display: inline-block;
-	vertical-align: top;
-	width: 20%;
-	margin-right: 15%;
-}
-.imagembeneficios{
-	width: 50%;
+nav a {
+    text-transform: uppercase; /* maiusculo*/
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
 }
 
+nav a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.produtos li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;  
+    margin: 0% 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border-color: #000000 ;
+    border-width: 2px;
+    border-style: solid; /* ou declarar tudo junto ex: border: 2px solid #000000*/
+    border-radius: 10px; /* arredondando o canto de borda*/
+}
+.produtos li:hover{ /* quando passa o mouse por cima*/
+    border-color: #c78c19;
+}
+.produtos li:active{ /* quando clica o mouse*/
+    border-color: #088c19;
+}
+.produtos li:hover h2{
+    font-size: 34px; 
+}
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.produto-descricao{
+    font-size: 18px;
+    font-weight: bold;
+}
+.produto-preco{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0 0 ; /*ou margin-top: 10px;*/
+}
+footer{
+    text-align: center;
+    /*background-color:#cccccc ;*/
+    background: url("bg.jpg"); /* usa uma imagem pequena e copia varias vezes e não deixa o site pesado, ao inves de usar uma imgaem grande*/
+    padding: 40px 0;
+}
+.copyright{
+    color: #ffffff;
+    font-size: 13px;   
+    margin:20px  ;
+    
+}
+main {
+    width: 940px;
+    margin: 0 auto;
+}
 
+form {
+    margin: 40px 0;
+}
 
+form label, form legend {
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
 
+.input-padrao {
+    display: block;
+    margin: 0 0 20px; /*define a área de margem nos quatro lados do elemento*/
+    padding: 10px 25px; /*serve para alterarmos o espaçamento interno, entre o conteúdo e a borda*/
+    width: 50%; /* largura da área de conteúdo de um elemento*/
+}
 
+.checkbox {
+    margin: 20px 0;
+}
+.enviar {
+    width:40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;/* arredondar a borda*/
+    transition: 1s all; /* tempo que leva para virar a cor mais escura*/
+    cursor: pointer; /*mouse vira a mãozinha*/
+}
+.enviar:hover { /* hover quando passa o mouse*/
+    background: darkorange;
+    transform: scale(1.2); /* o tamanho proporcional de aumento do botão*/
+}
+table {
+    margin: 20px 0 40px;
+}
 
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
 
-
-<!-- hexadecimal 0123456789ABCDEF é usado para cores
-RGD (red green blue)
-#_ _ (red) _ _ (green) _ _ (blue) usa casa espaço para cada uma dessas cores
-
-0= ausência de cores
-F = máximo de cor 
-
-#000000
-#FFFFFF
-
-ex: para representar o vermelho
-#_ _ (no máximo) e o restante não exista
-#FF0000
-
-3 maneiras de representar as cores: pelo nome, pelo hexadecimal e pelo dicionário RGB de 0 a 255
-0=ausencia
-255=máximo
-EX dicionário RGB 
-rgb( 255, 0, 0) fica vermelho rgb( 0, 255, 0) fica verde rgb( 0, 0, 255) fica azul -->
-<!-- marcação de uma classe é com . -->
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}

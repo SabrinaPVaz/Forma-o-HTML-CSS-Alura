@@ -1,0 +1,72 @@
+
+body {
+	
+}
+	#banner{
+		width: 100%
+}
+.principal{
+	background: #CCCCCC;
+	padding: 30px;
+}
+.titulo-principal{
+	padding-left: 20px;
+}
+.titulo-centralizado{ 
+	text-align:center
+}
+p{
+  	 text-align: center
+}
+	#missao{
+ 		style=font-size:20px
+ }
+em strong {
+	color: red
+}
+
+.itens{ 
+		font-style: italic
+}
+.beneficios{
+	background-color: white;
+	padding: 20px;
+}
+
+ul{
+	display: inline-block;
+	vertical-align: top;
+	width: 20%;
+	margin-right: 15%;
+}
+.imagembeneficios{
+	width: 50%;
+}
+
+
+
+
+
+
+
+
+<!-- hexadecimal 0123456789ABCDEF é usado para cores
+RGD (red green blue)
+#_ _ (red) _ _ (green) _ _ (blue) usa casa espaço para cada uma dessas cores
+
+0= ausência de cores
+F = máximo de cor 
+
+#000000
+#FFFFFF
+
+ex: para representar o vermelho
+#_ _ (no máximo) e o restante não exista
+#FF0000
+
+3 maneiras de representar as cores: pelo nome, pelo hexadecimal e pelo dicionário RGB de 0 a 255
+0=ausencia
+255=máximo
+EX dicionário RGB 
+rgb( 255, 0, 0) fica vermelho rgb( 0, 255, 0) fica verde rgb( 0, 0, 255) fica azul -->
+<!-- marcação de uma classe é com . -->
